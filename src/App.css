@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  margin: 0;
+  font-family: 'League Spartan', 'open sans';
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  background-color: tomato;
+  color: snow;
+  justify-content: center;
+}
+
+.app-logo {
+  font-size: 40px;
+  color: cyan;
+  margin-top: -4px;
+}
+
+.card {
+  width: 100%;
+  font-size: 12px;         
+  display: flex;          
+  flex-direction: row; 
+  padding: 50px;
+  margin-bottom: -20px;
+  background:snow;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.3);
+}
+
+.info {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px
+}
+
+.card-location {
+  display: flex;
+  flex-direction: row;
+}
+.location-icon {
+  color: tomato;
+  margin: auto 0;
+}
+.location {
+  margin: 0 6px;
+  font-size: 12px;
+  color: grey;
+}
+.url {
+  margin: 0 6px;
+  color: gray;
+}
+
+.card-title {
+  margin: 5px 0 15px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.card-date {
+  margin: 5px 0 8px 0;
+  font-weight: bold;
+}
+.card-description {
+  display: block;
+  font-size: 11px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
